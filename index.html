@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Mitan Institute </title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link rel="icon" href="imgs/logobang.png"/>
+</head>
+
+<body>
+
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <!-- LOGO: دەستکاری بکە بۆ ناوی پەیمانگە -->
+      <div class="logo" data-en=" Mitan Private Institute " data-ar=" معهد ميتان الخاص " data-ku="  پەیمانگەها میتان یا تایبەت  ">
+      </div>
+
+      <!-- NAV LINKS: ئەم بەشە دەستکاری بکە بۆ زیادکردن یان لابردنی لینکان -->
+      <ul class="nav-links" id="navLinks">
+        <li><a class="daspek" href="#" data-en="Home" data-ar="الرئيسية" data-ku=" دەستپێک " ></a></li>
+        <li><a href="#departments" data-en="Departments" data-ar="الأقسام" data-ku=" پشکێن پەیمانگەهێ "></a></li>
+        <li><a href="#students" data-en=" About Us " data-ar=" معلومات عنا " data-ku=" دەربارەی مە "></a></li>
+        <li><a href="#faculty" data-en=" Special Offers " data-ar=" عروض خاصة " data-ku=" ئۆفەرێن تایبەت "></a></li>
+        <li><a href="#resources" data-en=" information " data-ar="  المعلومات " data-ku=" زانیـــیاری "></a></li>
+        <li><a href="#faq" data-en=" Questions and Answers " data-ar=" الأسئلة والأجوبة " data-ku=" پرسیار و بەرسڤ "> </a></li>
+        <li><a href="books.html" data-en=" Library PDF " data-ar=" مكتبة PDF " data-ku=" پەرتووکخانە PDF "> </a></li>
+        
+      </ul>
+
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+      <!-- LANGUAGE SELECTOR:
+           ku = Kurdish, en = English, ar = Arabic
+           ئەم ژمارەیە گۆڕانکاری زمان دەکات؛ کۆدەکانی تێدایە ل script.js -->
+      <select id="languageSelector" onchange="changeLanguage()">
+        <option value="ku">کوردی</option>
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 data-en="Welcome to Mitan Private Institute" data-ar="مرحبًا بكم في معهد ميتان الخاص" data-ku=" بخێرھاتن بو  پەیمانگەها میتان یا تایبەت ">
+      </h1>
+      <p data-en="Quality Education Since 2019."
+         data-ar="تعليم عالي الجودة منذ 2019."
+         data-ku=" فێرکرنا کوالێتی بلند ژ سالا 2019">
+      </p>
+      <div class="hero-actions">
+        <a href="#departments" class="btn" data-en="Explore Departments" data-ar="استعرض الأقسام" data-ku="  پشکێن پەیمانگەهێ  "> </a>
+        <a href="#resources" class="btn btn-outline" data-en=" More information " data-ar=" مزيد من المعلومات " data-ku=" زانیـــیاریێـن زێـدەتـر  "> </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPARTMENTS -->
+  <section class="section" id="departments">
+    <div class="container">
+      <h2 data-en="Departments" data-ar="الأقسام" data-ku=" بەشێـن پەیمانگەها میتان "> </h2>
+      <p class="section-intro"
+         data-en="Vision: A constructive and productive student with modern science and technology and advanced in all three fields."
+         data-ar=" الرؤية: طالب بناء ومنتج يتمتع بالعلم والتكنولوجيا الحديثة ومتقدم في المجالات الثلاثة"
+         data-ku=" ديد: قوتابیه کێ ئاڤاکه ر و به رهه مهێـنه ر ب زانست و ته کنولوژیا سه رده م و پێـشکه فتی ل هەرسێ پشکێن ">
+      </p>
+
+      <!-- DEPARTMENT CARDS: هەر دەتەوێت زیاد بکە یان لاببەر -->
+      <div class="grid" id="departGrid">
+        <article class="card">
+          <img src="imgs/it technology.webp" alt="dept1">
+          <h3 data-en=" IT - Information Technology Department " data-ar=" تكنولوجيا المعلومات - قسم تكنولوجيا المعلومات " data-ku=" پشکا تەکنەلۆژیا زانیاری "> </h3>
+          <p data-en=" This department focuses on learning about computers, programming, and information systems. It's for those interested in modern technology, software development, and managing computer networks. " data-ar=" يركز هذا القسم على تعلم الكمبيوتر، البرمجة، وأنظمة المعلومات. وهو مخصص لمن يهتم بالتكنولوجيا الحديثة، تطوير البرمجيات، وإدارة شبكات الكمبيوتر. " data-ku=" ئەڤ بەشە ل دۆر فێربوونا کۆمپیتەر، پرۆگرامسازی، و سیستەمێن زانیاری یە. ژ بۆ وان کەسانە یێن حەز ژ تەکنەلۆژیا نوو، چێکرنا بەرنامەیان و ب رێڤەبرنا تۆڕێن کۆمپیتەری دکەن. ">
+          </p>
+          <p class="dolar" data-ku=" 1,000,000 IQD / سالانە  "  data-ar=" 1,000,000 دينار عراقي / سنة " data-en=" 1,000,000 IQD / Year " > </p>
+        </article>
+
+        <article class="card">
+          <img src="imgs/AdministrativeDepartment.webp" alt="dept2">
+          <h3 data-en=" Administration Department " data-ar=" قسم الإدارة  " data-ku="  پشکا کارگێری  ">  </h3>
+          <p data-en=" In this department, students learn how to manage a business or company, how to market products or services, and how to make sound administrative decisions. " data-ar=" في هذا القسم، يتعلم الطلاب كيفية إدارة الأعمال أو الشركات، وكيفية تسويق المنتجات أو الخدمات، وكيفية اتخاذ القرارات الإدارية السليمة. " data-ku=" دڤی بەشی دا قوتابی فێر دبیت کا چاوا کارەک یان کومپانیەک ب رێڤە ببەت، چاوا بازارکرنێ (مارکێتینگێ) بکەت و چاوا بریارێن دروست بۆ کارگێریێ وەربگریت. ">
+          </p>
+<p class="dolar" data-ku=" 1,000,000 IQD / سالانە  "  data-ar=" 1,000,000 دينار عراقي / سنة " data-en=" 1,000,000 IQD / Year " > </p>
+
+        </article>
+
+        <article class="card">
+          <img src="imgs/Share Accounting.webp" alt="dept3">
+          <h3 data-en=" Accounting Department " data-ar=" قسم المحاسبة " data-ku="  پشکا ژمێریاری ">  </h3>
+          <p data-en=" This department teaches students how to perform accounting tasks and organize financial matters. It's for those who enjoy working with numbers and banking operations. " data-ar=" يُعلّم هذا القسم الطلاب كيفية أداء المهام المحاسبية وتنظيم الأمور المالية. وهو مُصمّم لمن يُحبّون التعامل مع الأرقام والعمليات المصرفية. " data-ku=" ئەڤ بەشە قوتابیان فێر دکەت کا چاوا ژمێریاریێ بکەن و کارێن دارایی رێک بێخن. یانی ژ بۆ وان کەسانە یێن حەز ژ ژمارە و کارێن بانقی دکەن. ">
+          </p>
+<p class="dolar" data-ku=" 1,000,000 IQD / سالانە  "  data-ar=" 1,000,000 دينار عراقي / سنة " data-en=" 1,000,000 IQD / Year " > </p>
+
+</article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDENTS -->
+  <section class="section alt" id="students">
+    <div class="container">
+      <h2 data-en=" About us " data-ar=" معلومات عنا " data-ku=" دەربارەی مە "> دەربارەی مە </h2>
+      <p data-en=" Founded in 2019, Mitan Private Institute is a premier educational center located in the heart of Dohuk - Kevla. We are dedicated to providing high-quality, accessible education to foster the next generation of professionals. Our modern curriculum and experienced faculty ensure our students are well-prepared for their future careers. "
+         data-ar=" تأسس معهد ميتان الخاص عام ٢٠١٩، وهو مركز تعليمي رائد يقع في قلب محافظة دهوك - كيفلا. نلتزم بتوفير تعليم عالي الجودة وسهل المنال، لتأهيل الجيل القادم من المهنيين. مناهجنا الحديثة وأعضاء هيئة التدريس ذوي الخبرة تضمن إعداد طلابنا جيدًا لمستقبلهم المهني. "
+         data-ku=" پەیمانگەها میتان یا تایبەت ل سالا 2019 هاتیە دامەزراندن، سەنتەرەکێ پێشکەفتی یێ فێرکرنێ یە و دکەڤیتە دلێ دهۆکێ - کێڤلا. ئەم کار دکەین بۆ پێشکێشکرنا فێرکرنەکا کوالێتی بلند و بەردەست بۆ ئاڤاکرنا نڤشەکێ نوو یێ پروفیشنال. پرۆگرامێن مە یێن مودرێن و مامۆستایێن شارەزا پشتراست دکەن کو قوتابیێن مە ب باشی بۆ پاشەرۆژا کاری د ئامادەکرینە. ">
+      </p>
+
+      <div class="cards-row">
+        <div class="small-card">
+          <h4 data-en=" Article 1 " data-ar=" مقالة 1 " data-ku=" پەیڤ 1 "> </h4>
+          <p data-en=" I assure you that you will succeed 
+If you succeed is not giving up 😌. " data-ar=" أؤ كد لك بأنك ستنجح لكن بشرط 
+أن تكون ناجحآ في عدم الاستسلام 😌. " data-ku=" دڵنیات دەکەم سەرکەوتوو دەبیت 
+بە مەرجێک سەرکەوتووبیت لە کۆڵنەدان😌. ">
+          </p>
+        </div>
+
+        <div class="small-card">
+          <h4 data-en=" Article 2 " data-ar=" مقالة 2 " data-ku=" پەیڤ 2 "> </h4>
+          <p data-en=" If you feel pain , you’re alive . if you feel other people’s pain , you’re a human being🤍 " data-ar=" إذا شعرت بالألم فأنت على قيد الحياة. وإذا شعرت بألم الآخرين فأنت إنسان. " data-ku=" ئەگەر هەست بە ئازار بکەیت ، ئەوا تۆ زیندووی . ئەگەر هەست بە ئازاری کەسانی تر بکەیت ، ئەوا تۆ مرۆڤیت🤍 ">
+            کتێب، وتە و ماڵپەڕە زانستەکان بگەڕێنەوە.
+          </p>
+        </div>
+
+        <div class="small-card">
+          <h4 data-en=" Article 3 " data-ar=" مقالة 3 " data-ku=" پەیڤ 3 ">  </h4>
+          <p data-en=" Some make mistakes, some learn lessons, and some just remember a sentence and that's it! " data-ar=" بعض الناس يرتكبون الأخطاء، وبعضهم يتعلمون الدروس، وبعضهم يتذكرون الجملة فقط وهذا كل شيء! " data-ku=" هەندێک هەڵە دەکەن، هەندێک وانە فێر دەبن، هەندێکیش تەنها ڕستەیەکیان لەبیرە و تەواو! ">
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACULTY -->
+  <section class="section" id="faculty">
+    <div class="container">
+      <h2 data-en=" Special Offers " data-ar=" عروض خاصة " data-ku=" ئۆفەرێن تایبەت "> </h2>
+      
+      <div class="grid faculty-grid" id="facultyGrid">
+        <!-- Example faculty card: زیاد بکە لە پێویست -->
+             <div class="faculty-card">
+
+
+          <img src="imgs/Special Offers.jpg" alt="prof1">
+          <h4 data-en=" 10% Family Discount " data-ar=" خصم عائلي ١٠٪ " data-ku=" داشکاندنا 10% بۆ خێزانان "> </h4>
+          <p data-en=" Education is a family affair. If two or more students from the same family enroll, each receives a 10% discount. " data-ar=" التعليم شأن عائلي بامتياز. في حال تسجيل طالبين أو أكثر من نفس العائلة، يحصل كل منهم على خصم ١٠٪. " data-ku=" فێرکرن کارەکێ خێزانی یە. ئەگەر دوو یان پتر قوتابی ژ ئێک خێزان ناڤێن خۆ تۆمار بکەن، هەر ئێک داشکاندنەکا 10% وەردگریت. "> </p>
+        </div>
+
+        <div class="faculty-card">
+          <img src="imgs/Special Offers100.jpg" alt="prof1">
+                    <h4 data-en=" 100% Annual Discount " data-ar="  خصم سنوي ١٠٠٪ " data-ku=" داشکاندنا 100% یا سالانە "> </h4>
+
+          <p data-en=" A full-year tuition discount is available for qualifying students. A unique opportunity to learn without financial burden. " data-ar=" خصم على الرسوم الدراسية لمدة عام كامل متاح للطلاب المؤهلين. فرصة فريدة للتعلم دون أعباء مالية. " data-ku=" داشکاندنەکا تەمام یا سالانە بۆ قوتابیێن شایستە بەردەستە. دەلیڤەیەکا ئێکانیە بۆ فێربوونێ بێ بارگرانیێن دارایی. "></p>
+
+        </div>
+
+        <div class="faculty-card">
+          <img src="imgs/Special Offers.jpg" alt="prof2">
+          <h4 data-en=" 10% Employee Discount " data-ar=" خصم ١٠٪ للموظفين " data-ku=" داشکاندنا 10% بۆ فەرمانبەران "> </h4>
+          <p data-en=" We value our community. All employees and their children receive a 10% discount on annual fees. " data-ar=" نُقدّر مجتمعنا. يحصل جميع الموظفين وأبنائهم على خصم ١٠٪ على الرسوم السنوية. " data-ku=" ئەم بها ددەینە جڤاکێ خۆ. هەمی فەرمانبەر و زارۆکێن وان داشکاندنەکا 10% ل سەر کریا سالانە وەردگرن. "> </p>
+        </div>
+
+          
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES (Video + Documents) -->
+  <section class="section alt" id="resources">
+    <div class="container">
+      <h2 data-en=" Information " data-ar=" معلومة " data-ku=" زانیـــیاری "> </h2>
+      <p data-en=" Learn more about the institute." data-ar=" تعرف على المزيد حول المعهد " data-ku=" زانیـــیاریێـن زێـدەتـر دەربارەی پەیمانگەهێ ">
+      </p>
+
+      <!-- VIDEO GALLERY: گۆڕانکاری بکە بۆ ڤیدیۆ تەواو -->
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-thumb">
+            <!-- ئەگەر دەتەوێت ڤیدیۆ زیاد بکە بە iframe یوتیوب یان فایلە داخلی -->
+            <video width="400" controls>
+  <source src="videos/video01.mp4" type="video/mp4">
+</video>
+
+          </div>
+        </div>
+
+           <video width="400" controls>
+  <source src="videos/video04.mp4" type="video/mp4">
+</video>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 data-en=" Questions and Answers " data-ar=" الأسئلة والأجوبة " data-ku=" پرسیار و بەرسڤ ">  </h2>
+
+      <div class="faq-list">
+        <details>
+          <summary data-en=" Ready to start your journey with us? " data-ar=" هل أنت مستعد لبدء رحلتك معنا؟ " data-ku=" ئامادەی دەست ب گەشتت بکەی دگەل مە؟ ">  </summary>
+          <p data-en="Contact us today!." data-ar=" اتصل بنا اليوم! " data-ku="  ئەڤرۆ پەیوەندیێ ب مە بکە! "> </p>
+        </details>
+
+        <details>
+          <summary data-en="Are there scholarships?" data-ar="هل هناك منح دراسية؟" data-ku="ئایا فێرسیاری هەیە؟">  </summary>
+          <p data-en="Yes, scholarship info is on the finance page." data-ar="نعم، معلومات المنح على صفحة الشؤون المالية." data-ku="بەڵێ، زانیاری فێرسیاری لە لاپەڕەی دارایییە."> </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section alt" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2 data-en="Contact Us" data-ar="اتصل بنا" data-ku="پەیوەندی بکە"> </h2>
+        <p data-en="Questions? Reach out to admissions or administration." data-ar="أسئلة؟ اتصل بالقبول أو الإدارة." data-ku="پرسیارەکان؟ پەیوەندیبە بە لاپەڕەی ڕێکخراو یان بەڕێوەبەر.">  </p>
+
+        <!-- CONTACT FORM: (نموونەی ساده) - ئەم فۆرمە کەواتە بکە هەموو دەستکاری لە خزمەت -->
+        <form id="contactForm" onsubmit="submitContact(event)">
+          <label for="name" data-en="Name" data-ar="الاسم" data-ku="ناو"></label>
+          <input id="name" name="name" required />
+
+          <label for="email" data-en="Email" data-ar="البريد الإلكتروني" data-ku="ئیمەیڵ"></label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message" data-en="Message" data-ar="الرسالة" data-ku="پەیام"></label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn" data-en="Send Message" data-ar="إرسال" data-ku="ناردن"></button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3 data-en=" Mitan Private Institute " data-ar=" معهد ميتان الخاص " data-ku=" پەیمانگەها میتان یا نەحکومی "> </h3>
+        <p data-en=" Duhok – Kevla " data-ar="  دهۆك – کێڤلا  " data-ku=" دهۆك – کێڤلا ">   </p>
+        <p data-en="Phone: 07507966501" data-ar="الهاتف:  07507966501 " data-ku="تەلەفۆن:  07507966501 ">  </p>
+        <p data-en="Email: info@college.edu" data-ar="البريد الإلكتروني: info@college.edu" data-ku="ئیمەیڵ: info@college.edu"> </p>
+      </div>
+    </div>
+  </section>
+<div class="social-icons">
+  <a href=" https://www.facebook.com/share/19x7E1aox8/ " target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href=" https://t.me/addlist/eBLFSizcxJw1Yzdi " target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a>
+  <a href=" https://www.instagram.com/mitan_institute?igsh=MWdxZzJuZDg0amNkdQ== " target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href=" https://www.snapchat.com/@mitan_institute?sender_web_id=d6227455-9663-47ee-89e0-5adbfeafee69&device_type=desktop&is_copy_url=true " target="_blank"><i class="fab fa-snapchat" style="color: #FFD43B;"></i></a>
+  <a href=" https://wa.me/qr/XYZ12345 " target="_blank"><i class="fab fa-whatsapp"></i></a>
+  
+</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <p data-en="© 2025 Mitan Private Institute. All Rights Reserved."
+         data-ar="© جميع الحقوق محفوظة لمعهد ميتان الخاص ٢٠٢٥."
+         data-ku="© 2025 پەیمانگەها میتان یا تایبەت. هەمی ماف پاراستینە.">
+      </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
